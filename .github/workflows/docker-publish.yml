@@ -77,7 +77,7 @@ jobs:
           echo "image=$IMAGE_LOWER" >> "$GITHUB_OUTPUT"
 
       - name: Build + push (multi-arch)
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: Dockerfile
